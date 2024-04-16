@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  db:
+    image: mysql:8.1
+    environment:
+      MYSQL_ROOT_PASSWORD: otavio23
+      MYSQL_DATABASE: appdb
+      MYSQL_USER: otavio
+      MYSQL_PASSWORD: Otavio2319@
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db:/var/lib/mysql
